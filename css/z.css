@@ -1,0 +1,231 @@
+*{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+    /* display: block; */
+    /* background-color: #f4f4f4; */
+}
+
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+
+#mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+  }
+  
+  article {
+    box-sizing: border-box;
+    /* width: 300px; */
+    border-bottom: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .article-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .article-p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .article-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .article-link{
+    display: block;
+    text-align: center;
+    background-color: rgb(2, 2, 47);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .article-link:hover {
+    background-color: rgba(2, 2, 46, 0.737);
+  }
+
+
+
+
+
+  /* Add styles specific to the About page */
+.about-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style the active link in the navigation */
+.nav-links li a.active {
+  color: rgb(152, 143, 5);
+}
+
+/* Footer styles */
+.footer {
+  background-color: rgb(2, 2, 47);
+  color: white;
+  text-align: center;
+  padding: 20px 0; /* Increase padding for a more prominent footer */
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h3 {
+  color: rgb(152, 143, 5);
+}
+
+
+
+/* Contact Section styles */
+.contact-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  color: rgb(2, 2, 47);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.contact-form button {
+  background-color: rgb(152, 143, 5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: rgb(2, 2, 47);
+}
+
+
+
+/* Newsletter Section styles */
+.newsletter-section {
+  background-color: rgb(240, 240, 240);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.newsletter-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-form h2 {
+  color: rgb(2, 2, 47);
+}
+
+.newsletter-form p {
+  color: rgb(2, 2, 47);
+  margin-bottom: 20px;
+}
+
+.newsletter-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.newsletter-form input {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.newsletter-form button {
+  background-color: rgb(152, 143, 5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: rgb(2, 2, 47);
+}
+
+
+
+
+
+
+
+/* Adjustments for responsiveness */
+@media screen and (max-width: 600px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-section {
+      margin: 10px 0;
+  }
+}

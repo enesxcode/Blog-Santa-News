@@ -1,0 +1,193 @@
+/* Existing styles */
+
+/* Adjustments for responsiveness */
+@media screen and (max-width: 1200px) {
+    .nav-links li a {
+        width: 100%;
+    }
+
+    .nav-links li a:hover {
+        width: 100%;
+    }
+
+    hr {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .nav-links li a {
+        width: 100%;
+    }
+
+    .nav-links li:hover ul.nav-drop {
+        display: none;
+    }
+
+    .nav-links li:hover ul.nav-drop {
+        display: flex;
+    }
+
+    /* .search {
+        flex-direction: column;
+    } */
+
+    /* .search input {
+        margin-bottom: 10px;
+    } */
+
+    .head {
+        padding-left: 20px;
+        font-size: 2rem;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .latest-news {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .main-content,
+    .sidebar {
+        flex: 1;
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .footer-section {
+        margin: 10px 0;
+    } */
+
+    .newsletter-form,
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin-bottom: 8px;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .nav-links li:hover ul.nav-drop {
+        width: 100%;
+    }
+
+    /* .search input,
+    .search button {
+        width: 100%;
+    } */
+
+    .head {
+        padding-left: 10px;
+        font-size: 1.5rem;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .latest-news {
+        margin-top: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .main-content,
+    .sidebar {
+        flex: 1;
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section li a {
+        color: #fff;
+    
+    }
+
+    .newsletter-form,
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+/* Styles for smaller screens can be added as needed */
+/* Existing styles */
+
+/* Adjustments for responsiveness */
+@media screen and (max-width: 900px) {
+    /* ... (other styles) */
+
+    .search {
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        background-color: white; /* Add background color if needed */
+        z-index: 1000; /* Add a higher z-index to make it appear above other elements */
+    }
+
+    .search input {
+        margin-bottom: 10px;
+    }
+}
+
+/* Existing styles */
+
+/* Adjustments for responsiveness */
+@media screen and (max-width: 600px) {
+    /* ... (other styles) */
+
+    .search {
+        position: static; /* Change back to static positioning */
+        background-color: transparent; /* Remove background color if added */
+        z-index: auto; /* Reset z-index to its default value */
+    }
+
+    .search input,
+    .search button {
+        width: 100%;
+    }
+}
+
+/* Styles for smaller screens can be added as needed */

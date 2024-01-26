@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo {
+    height: 150px;
+    background-color: rgb(2, 2, 47);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease-in-out; 
+}
+
+.logo:hover {
+    height: 200px;
+}
+
+.title {
+    color: rgb(152, 143, 5);
+    font-size: 5rem;
+    font-weight: 600;
+    transition: font-size 0.8s color 0.3s ease-in-out; /* Add transition for color property */
+}
+
+.title:hover {
+    font-size: 6rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(152, 143, 5);
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5px;
+}
+.nav{
+    /* display: flex; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    /* background-color: red; */
+}
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.nav-links li a {
+    width: 100%;
+    text-decoration: none;
+    color: rgb(2, 2, 47);
+    transition: width 2s;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+    width: 50%;
+}
+
+
+
+ul li ul.nav-drop li{
+    display: block;
+    padding: 20px;
+    /* padding-right: 20px; */
+    width: max-content;
+}
+ul li ul.nav-drop{
+    position: absolute;
+    color: rgb(2, 2, 47);
+    background-color: rgb(152, 143, 5);
+    display: none;
+    /* z-index: 999;     */
+}
+.nav-links li:hover ul.nav-drop{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    line-height: 10px;
+}
+.nav-drop li a:hover{
+    background: none;
+    color: rgb(2, 2, 47);
+    text-decoration: underline;
+}
+
+
+
+.search {
+    margin-bottom: 20px;
+}
+
+.search input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.search button {
+    width: 100%;
+    height: 35px;
+    font-size: 17px;
+    background-color: rgb(2, 2, 47);
+    color: #fff;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: rgba(2, 2, 46, 0.737);
+    transition: .2s;
+}
+.head{
+    padding-left: 50px;
+    padding-top: 30px;
+    font-size: 2.5rem;
+}
+
+hr {
+    border: none; 
+    height: 5px;
+    background-color: rgb(2, 2, 47);
+    width: 30%;
+    transition: background-color 0.3s ease;
+}
+
+
+hr:hover {
+    background-color: rgb(152, 143, 5);
+    width: 60%;
+}
+
+.latest-news{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
